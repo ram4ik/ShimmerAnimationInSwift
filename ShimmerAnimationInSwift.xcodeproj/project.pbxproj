@@ -13,6 +13,7 @@
 		1D37D08225C5D6A4009B09EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D37D08025C5D6A4009B09EC /* Main.storyboard */; };
 		1D37D08425C5D6A8009B09EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D37D08325C5D6A8009B09EC /* Assets.xcassets */; };
 		1D37D08725C5D6A8009B09EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D37D08525C5D6A8009B09EC /* LaunchScreen.storyboard */; };
+		4C5132AD6BB6372EA55AA548 /* Pods_ShimmerAnimationInSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C71FA315438D9C84575F2E1 /* Pods_ShimmerAnimationInSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		1D37D08325C5D6A8009B09EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D37D08625C5D6A8009B09EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D37D08825C5D6A8009B09EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58DD4EE48105684F26732DF0 /* Pods-ShimmerAnimationInSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShimmerAnimationInSwift.debug.xcconfig"; path = "Target Support Files/Pods-ShimmerAnimationInSwift/Pods-ShimmerAnimationInSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		8C71FA315438D9C84575F2E1 /* Pods_ShimmerAnimationInSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShimmerAnimationInSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4412E75B4E785396B794D1E /* Pods-ShimmerAnimationInSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShimmerAnimationInSwift.release.xcconfig"; path = "Target Support Files/Pods-ShimmerAnimationInSwift/Pods-ShimmerAnimationInSwift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C5132AD6BB6372EA55AA548 /* Pods_ShimmerAnimationInSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13804421FC92185341853217 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C71FA315438D9C84575F2E1 /* Pods_ShimmerAnimationInSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1D37D06E25C5D6A4009B09EC = {
 			isa = PBXGroup;
 			children = (
 				1D37D07925C5D6A4009B09EC /* ShimmerAnimationInSwift */,
 				1D37D07825C5D6A4009B09EC /* Products */,
+				FCE266C0BD5A4BA84B3F3667 /* Pods */,
+				13804421FC92185341853217 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = ShimmerAnimationInSwift;
 			sourceTree = "<group>";
 		};
+		FCE266C0BD5A4BA84B3F3667 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58DD4EE48105684F26732DF0 /* Pods-ShimmerAnimationInSwift.debug.xcconfig */,
+				A4412E75B4E785396B794D1E /* Pods-ShimmerAnimationInSwift.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D37D08B25C5D6A8009B09EC /* Build configuration list for PBXNativeTarget "ShimmerAnimationInSwift" */;
 			buildPhases = (
+				3F2BCC89056AC5DC04BC9E75 /* [CP] Check Pods Manifest.lock */,
 				1D37D07325C5D6A4009B09EC /* Sources */,
 				1D37D07425C5D6A4009B09EC /* Frameworks */,
 				1D37D07525C5D6A4009B09EC /* Resources */,
+				4C63692F5F7E5B7DB8E28ED5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F2BCC89056AC5DC04BC9E75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShimmerAnimationInSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C63692F5F7E5B7DB8E28ED5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShimmerAnimationInSwift/Pods-ShimmerAnimationInSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShimmerAnimationInSwift/Pods-ShimmerAnimationInSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ShimmerAnimationInSwift/Pods-ShimmerAnimationInSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D37D07325C5D6A4009B09EC /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		1D37D08C25C5D6A8009B09EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58DD4EE48105684F26732DF0 /* Pods-ShimmerAnimationInSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +371,7 @@
 		};
 		1D37D08D25C5D6A8009B09EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4412E75B4E785396B794D1E /* Pods-ShimmerAnimationInSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
